@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------------------------- Styling for all pages ------------------------------- */
+/* Reset */
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+/* Navigation Bar */
+navigation {
+    display:flex;
+    justify-content:center;
+    gap: 30px;
+    background-color: #864528;
+    padding: 15px 0;
+    border-bottom: 3px solid #FFC90E;
+}
+navigation a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+navigation a:hover {
+	color: #FFC90E;
+}
+navigation a i {
+    margin-right: 6px;
+    color: #FFFFFF;
+	color:inherit;
+	transition: inherit;
+}
+/* Footer */
+footer {
+    background-color: #FFC90E;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+footer a {
+    margin: 0 8px;
+    color: #864528;
+    font-size: 18px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ffffff;
+}
+footer p {
+    font-size: 13px;
+    color: #000000;
+    margin-top: 12px;
+}
+.designer {
+    font-weight: 600;
+    color: #864528;
+}
+/* ------------------------------- Home page (index) ------------------------------- */
+/* Header */
+body.home header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.home header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+body.home header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 8px;
+    font-style: italic;
+}
+body.home header p {
+	font-size: 18px;
+	color: #000000;
+	margin-top: 4px;
+}
+/* Main Section */
+body.home main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Desk Image Section */
+body.home .desk {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+/* ------------------------------- Contact page ------------------------------- */
+/* Header */
+body.contact header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.contact header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.contact header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+/* Contact Section */
+.contact .contactsection {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+body.contact .contactsection textarea {
+    padding: 10px;
+    border: 3px solid #FFC90E;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+body.contact .contactsection input {
+    padding: 10px;
+    border: 3px solid #FFC90E;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 70%;
+    box-sizing: border-box;
+}
+.contactsection button {
+    padding: 10px;
+    border: 3px solid #FFC90E;
+    border-radius: 10px;
+    background-color: #FFC90E;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contactsection button:hover {
+    background-color: #864528;
+}
+/* ------------------------------- Research page ------------------------------- */
+/* Header */
+body.research header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.research header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.research header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+body.research main {
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:50px;
+    display: grid;
+    gap: 20px;
+}
+body.research section {
+    background-color: #ffffff;
+    border-left: 12px solid #FFC90E;
+    padding: 30px 50px;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+body.research section h2 {
+	color:#864528;
+}
+body.research section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+	color: #000000;
+}
+body.research section ul li strong {
+	color: #864528;
+}
+body.research section a {
+	color:#864528;
+}
+body.research section a:hover {
+	color:#ffc90e;
+}
+/* ------------------------------- Education page ------------------------------- */
+/* Header */
+body.education header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.education header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.education header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+body.education main table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1100px;
+	border-collapse: separate;
+	border-spacing: 0 20px; 
+	padding: 0 20px;
+}
+/* Card-style rows */
+body.education table tr {
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+}
+/* Table cells */
+body.education table td {
+    padding: 25px;
+    vertical-align: middle;
+	width: 50%;
+}
+/* Images */
+body.education table img {
+    border-radius: 20px;
+    border: 10px solid #FFC90E;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ------------------------------- Achievements page ------------------------------- */
+body.achievements header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.achievements header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.achievements header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+/* Main Content */
+body.achievements main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 80px;
+}
+body.achievements table {
+    border-collapse: collapse;
+    text-align: center;
+	width: 100%;
+    max-width: 1100px;
+}
+/* Image Styling */
+body.achievements #pic {
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+	width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Description Text */
+body.achievements #description {
+    margin: 25px auto 0;
+    width: 100%;     
+    max-width: 900px;    
+    text-align: center; 
+    font-size: 20px;
+    color: #864528;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+body.achievements button {
+    padding: 10px;
+    border: 3px solid #FFC90E;
+    border-radius: 10px;
+    background-color: #FFC90E;
+    color: white;
+    font-size: 14px;
+    cursor:pointer;
+}
+body.achievements button:hover {
+    background-color: #864528;
+}
+body.achievements button[onclick="back()"] {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+body.achievements button[onclick="foreward()"] {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+/* ------------------------------- Hobbies page ------------------------------- */
+body.hobbies header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.hobbies header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.hobbies header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+/* Main Content */
+body.hobbies main ul li{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+	font-size: 18px;
+}
+body.hobbies main li i:hover{
+	transform: scale(1.8);
+	color:#ffc90e;
+	transition: transform 0.3s;
+}
+/* ------------------------------- Skills page ------------------------------- */
+body.skills header {
+    text-align: center;
+    padding: 40px 20px 25px;
+	line-height: normal;
+}
+body.skills header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+body.skills header p {
+	font-size: 20px;
+	color: #000000;
+	margin-top: 4px;
+}
+
+body.skills section {
+    padding: 10px 50px 50px 50px;
+}
+
+body.skills h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #864528;
+    display: inline-block;
+}
+
+body.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.skills li {
+    font-size: 18px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #ffc90e;
+}
+.skills-section i {
+    color: #ffc90e;
+    font-size: 30px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    navigation {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
+    navigation a {
+        font-size: 16px;
+    }
+	header h1 {
+        font-size: 28px;
+    }
+    header h2 {
+        font-size: 16px;
+    }
+    header p {
+        font-size: 14px;
+    }
+    main {
+        padding: 10px;
+    }
+}
